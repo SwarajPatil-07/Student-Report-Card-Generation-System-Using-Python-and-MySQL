@@ -91,7 +91,11 @@ Table: `marks`
 
 📸 Screenshots
 
-
+![Screenshot 2025-05-01 050657](https://github.com/user-attachments/assets/1554b2db-5669-43e6-9404-41e26498ccac)
+![Screenshot 2025-05-01 050712](https://github.com/user-attachments/assets/73cdebc3-5859-4d07-b434-8913ea9d8c56)
+![Screenshot 2025-05-01 050737](https://github.com/user-attachments/assets/6e0dfba4-3df2-43d0-924f-3dc818dca9e5)
+![Screenshot 2025-05-01 050638](https://github.com/user-attachments/assets/da03395f-2e17-4bc1-9565-a6814f4b7223)
+![Screenshot 2025-05-01 050623](https://github.com/user-attachments/assets/0e56399e-f1ef-44d7-bcee-94c3b046ef49)
 
 
 
@@ -101,4 +105,5 @@ Table: `marks`
 - Enable editing and deleting records
 - Export report cards as PDF
 - Add subject weightage or grading scale customization
+
 
