@@ -44,7 +44,7 @@ Table: `marks`
 
 1. Clone the repository
 
-   git clone https://github.com/your-username/student-report-card-system.git
+   git clone https://github.com/SwarajPatil-07/Student-Report-Card-Generation-System-Using-Python-and-MySQL
    cd student-report-card-system
    
 
