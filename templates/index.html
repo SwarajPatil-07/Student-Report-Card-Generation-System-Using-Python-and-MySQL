@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grade Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+     <header>
+        <h1>Student Grade Management System</h1>
+    </header>
+    <ul>
+        <li><a href="{{ url_for('add_student') }}">Add Student</a></li>
+        <li><a href="{{ url_for('enter_marks') }}">Enter Marks</a></li>
+        <li><a href="{{ url_for('report') }}">Generate Report</a></li>
+    </ul>
+    <footer style="text-align: center; margin-top: 50px; font-size: 14px; color: #777;">
+        &copy; 2025 Student Portal. All rights reserved.
+    </footer>
+</body>
+</html>

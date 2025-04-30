@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Marks - Student Grade Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Enter Marks for Student</h1>
+    </header>
+
+    <main>
+        <form method="post">
+            <label for="student_id">Student ID:</label><br>
+            <input type="number" name="student_id" required><br><br>
+
+            <label for="subject">Subject 1:(English)</label><br>
+            <input type="text" name="subject" required><br>
+            <label for="marks">Marks:</label><br>
+            <input type="number" name="marks" required><br><br>
+
+            <label for="subject">Subject 2:(Math)</label><br>
+            <input type="text" name="subject" required><br>
+            <label for="marks">Marks:</label><br>
+            <input type="number" name="marks" required><br><br>
+
+            <label for="subject">Subject 3:(Science)</label><br>
+            <input type="text" name="subject" required><br>
+            <label for="marks">Marks:</label><br>
+            <input type="number" name="marks" required><br><br>
+
+            <label for="subject">Subject 4:(Marathi)</label><br>
+            <input type="text" name="subject" required><br>
+            <label for="marks_4">Marks:</label><br>
+            <input type="number" name="marks" required><br><br>
+
+            <label for="subject">Subject 5:(History)</label><br>
+            <input type="text" name="subject" required><br>
+            <label for="marks">Marks:</label><br>
+            <input type="number" name="marks" required><br><br>
+
+            <input type="submit" value="Submit Marks">
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2025 Student Portal. All rights reserved.
+    </footer>
+</body>
+</html>

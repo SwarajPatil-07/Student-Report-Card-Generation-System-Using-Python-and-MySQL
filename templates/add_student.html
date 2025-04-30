@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student - Student Grade Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Add New Student</h1>
+    </header>
+
+    <main>
+        <form method="post">
+            <label for="student_id">Student ID:</label><br>
+            <input type="number" name="student_id" required><br>
+
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" required><br>
+
+            <input type="submit" value="Add Student">
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2025 Student Portal. All rights reserved.
+    </footer>
+</body>
+</html>

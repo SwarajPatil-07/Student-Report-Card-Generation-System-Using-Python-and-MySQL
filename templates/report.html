@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Report - Student Grade Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Generate Student Report</h1>
+    </header>
+
+    <main>
+        <form method="post">
+            <label for="student_id">Enter Student ID:</label><br>
+            <input type="number" name="student_id" required><br><br>
+
+            <input type="submit" value="Get Report">
+        </form>
+
+        {% if student %}
+            <h2>XYZ International School</h2>
+            <center><h4><i>85, ABC park, opposite newbc mall, Pune 11111</i></h4></center>
+           <center><h5>Email: info@abc.com   Website: www.abcinternational.com</h5></center>
+            
+            <hr>
+            <h2>Student Prograss Report Card</h2>
+            <center><h3>Student Name: {{ student.name }} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Student ID: {{ student.id }}</h3></center>
+            <center><h3>Acadimic Year: 2025-2026</time></h3></center>
+            
+            <ul>
+                {% for subject, mark in student.marks.items() %}
+                    <li>{{ subject }} {{ mark }}</li>
+                {% endfor %}
+            </ul>
+            <p>Total: {{ student.total }}/500</p>
+            <p>Percentage: {{ student.percentage }}%</p>
+            <p>Grade: {{ student.grade }}</p>
+            <p><b>GRADING SYSTEM</b> <br>
+                <b>A</b> = <i>Outstanding</i> &nbsp; <b>B</b> = <i>Satisfactory</i> <br>
+                <b>C</b> = <i>Fairly Satisfactory</i> &nbsp; <b>D</b> = <i>Need Improvement</i></p>
+        {% elif student is not none %}
+            <p>Student not found.</p>
+        {% endif %}
+    </main>
+    <hr>
+    <hr>
+    <hr>
+
+    <footer>
+        &copy; 2025 Student Portal. All rights reserved.
+    </footer>
+</body>
+</html>
